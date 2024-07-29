@@ -9,7 +9,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using salesApp.Data;
-using salesApp.Services;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure; // Certifique-se de que este pacote está instalado
 
 namespace salesApp
@@ -37,15 +36,9 @@ namespace salesApp
             services.AddDbContext<salesAppContext>(options =>
                 options.UseMySql(
                     Configuration.GetConnectionString("salesAppContext"),
-                    new MySqlServerVersion(new Version(8, 0, 25))
+                    new MySqlServerVersion(new Version(8, 0, 25)) // Use a versão do MySQL Server que você está usando
                 )
             );
-
-            // Adicionar outros serviços se necessário
-            // services.AddScoped<SeedingService>();
-            // services.AddScoped<SellerService>();
-            // services.AddScoped<DepartmentService>();
-            // services.AddScoped<SalesRecordService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -63,8 +56,6 @@ namespace salesApp
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                // Se os serviços forem implementados, você pode chamar:
-                // seedingService.Seed();
             }
             else
             {
@@ -77,7 +68,6 @@ namespace salesApp
             app.UseCookiePolicy();
 
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
