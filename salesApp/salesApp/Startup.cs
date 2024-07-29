@@ -9,8 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using salesApp.Data;
-using salesApp.Services; 
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure; 
+using salesApp.Services;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure; // Certifique-se de que este pacote está instalado
 
 namespace salesApp
 {
@@ -33,8 +33,59 @@ namespace salesApp
 
             services.AddControllersWithViews();
 
-            // Configure ??
+            // Configuração do DbContext para usar MySQL
+            services.AddDbContext<salesAppContext>(options =>
+                options.UseMySql(
+                    Configuration.GetConnectionString("salesAppContext"),
+                    new MySqlServerVersion(new Version(8, 0, 25))
+                )
+            );
+
+            // Adicionar outros serviços se necessário
+            // services.AddScoped<SeedingService>();
+            // services.AddScoped<SellerService>();
+            // services.AddScoped<DepartmentService>();
+            // services.AddScoped<SalesRecordService>();
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            var enUS = new CultureInfo("en-US");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(enUS),
+                SupportedCultures = new List<CultureInfo> { enUS },
+                SupportedUICultures = new List<CultureInfo> { enUS }
+            };
+
+            app.UseRequestLocalization(localizationOptions);
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                // Se os serviços forem implementados, você pode chamar:
+                // seedingService.Seed();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
-

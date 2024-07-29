@@ -51,6 +51,7 @@ D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Microso
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\MySqlConnector.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\NuGet.Common.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\NuGet.Configuration.dll
@@ -61,6 +62,7 @@ D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\NuGet.P
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\NuGet.ProjectModel.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\NuGet.Protocol.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\NuGet.Versioning.dll
+D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\System.CodeDom.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -251,5 +253,3 @@ D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\refint\
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\salesApp.pdb
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\salesApp.genruntimeconfig.cache
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\ref\salesApp.dll
-D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\MySqlConnector.dll
-D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
