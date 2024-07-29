@@ -251,3 +251,5 @@ D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\refint\
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\salesApp.pdb
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\salesApp.genruntimeconfig.cache
 D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\obj\Debug\net8.0\ref\salesApp.dll
+D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\MySqlConnector.dll
+D:\Projetos\Projetos Estudos\salesApp\salesApp\salesApp\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
